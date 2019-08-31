@@ -1,0 +1,291 @@
+@import "../../less/color.less";
+/*菜单样式文件*/
+/*菜单位置样式*/
+
+.HymenuCom .ui.menu{
+    border: 0px;
+}
+
+.HymenuCom .ui.segment {
+    cursor: pointer;
+    border-radius: 0;
+    border: 0px;
+}
+
+.HymenuCom .ui.thin.left.sidebar,
+.HymenuCom .ui.thin.right.sidebar {
+    width: 100%;
+    background: @background-menu;
+    overflow: hidden!important;
+}
+
+.HymenuCom .ui.bottom.visible.sidebar,.HymenuCom .ui.top.visible.sidebar{
+    height: 100%!important;
+    background: @background-menu;
+    border-left: 0px solid @color-button;
+}
+
+
+.HymenuCom .ui.icon.button,.HymenuCom .ui.icon.buttons .button{
+    width: 52px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: 0px;
+    padding-right: 2px;
+}
+
+
+.HymenuCom .left.ui.vertical.menu .item {
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    padding: 0px;
+    border-left: 2px solid  @background-menu;
+    text-align: center
+}
+
+
+.HymenuCom .ItemStyle-left:hover{
+    border-left-color:@color-button!important;
+    background-color:@background-unfold-menu!important;
+}
+
+.HymenuCom .ItemStyle-leftA{
+    border-left-color:@color-button!important;
+    background-color:@background-unfold-menu!important;
+}
+
+
+
+.Menu-Popup.ui.right.center.popup {
+    margin: 0px;
+    height: 35px;
+    width: 120px;
+    border-radius: 0px;
+    background: @background-unfold-menu;
+    color:  @background-interaction-normal;
+    border: 0px;
+    cursor: pointer;
+}
+
+.Menu-Popup.ui.left.center.popup:before,.Menu-Popup.ui.right.center.popup:before{
+    background: @background-unfold-menu;
+    box-shadow: none;
+}
+
+
+
+
+.HymenuCom .info{
+    text-align: center;
+    height: 35px!important;
+    padding: 0px 0px!important;
+    font-size: 14px;
+    color: @background-interaction-normal!important;
+    border-left-width: 0px!important;
+}
+
+.HymenuCom .infoDiv{
+    text-align: center;
+    padding: 0px 0px!important;
+    font-size: 14px;
+    color: @background-interaction-normal!important;
+    border-left-width: 0px!important;
+    min-height: 23px;
+}
+
+.HymenuCom .info:hover{
+    background:@background-menu!important;
+}
+
+
+.HymenuCom .info-span{
+    display: inline-block;
+    overflow: hidden;
+    width: 52px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+.HymenuCom .Indent{
+    font-size: 15px;
+    padding-top: 13px;
+}
+.HymenuCom .IsShowTopBtn{
+    background: @color-button!important;
+    width: 52px;
+    height: 40px;
+    text-align: center;
+}
+
+
+.HymenuCom .Horizontal{
+    padding: 10px 0px!important;
+    display: block!important;
+    width: 40px;
+}
+
+.HymenuCom .bottom-div{
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+    height:80px;
+    width: 52px;
+    text-align: center;
+}
+
+
+.HymenuCom .Bottom-Line{
+    border-bottom: 1px solid @color-menu-divider;
+    position: absolute;
+    bottom: 80px;
+    cursor: pointer;
+    height: 20px;
+    width: 52px;
+    text-align: center;
+}
+
+
+.HymenuCom .Bottom-LineTop{
+    height: 5px;
+    width: 52px;
+    text-align: center;
+}
+.HymenuCom .Bottom-LineTophotel{
+    height: 1px;
+    width: 52px;
+    text-align: center;
+}
+
+
+.HymenuCom .bottom-div-item{
+    border-left: 2px solid  @background-menu;
+    height: 40px;
+    text-align: center;
+}
+
+
+.HymenuCom .bottom-div-item:hover{
+    border-left-color:@color-button!important;
+    background-color:@background-unfold-menu!important;
+}
+.HymenuCom .bottom-div-itemA{
+    border-left: 2px solid  @background-menu;
+    border-left-color:@color-button!important;
+    background-color:@background-unfold-menu!important;
+}
+
+
+/*子菜单样式*/
+.HymenuCom.ui.right.center.popup,.HymenuCom.ui.visible.popup{
+    margin: 0px;
+    width: 120px;
+    padding: 0px;
+    border: 0px;
+}
+
+.HymenuCom.ui.popup>.ui.grid:not(.padded){
+    background: @background-unfold-menu;
+    margin: 0px;
+    color: @color-menu-font;
+    width: 120px;
+}
+
+.HymenuCom .childrenItem{
+    height: 40px;
+    vertical-align: middle!important;
+    border-bottom: 0px solid@color-menu-divider;
+    cursor: pointer;
+    padding: 0px 0px 0px 16px!important;
+    background: @background-unfold-menu;
+    display: flex!important;
+    align-items: center;
+}
+
+.HymenuCom .childrenItemTitleOne{
+    height: 40px;
+    vertical-align: middle!important;
+    border-bottom: 0px solid@color-menu-divider;
+    cursor: pointer;
+    padding: 0px 0px 0px 16px!important;
+    background: @background-unfold-menu;
+    display: flex!important;
+    align-items: center;
+}
+
+.HymenuCom .childrenItemTitleOne:hover{
+    color: @background-interaction-normal;
+   background: @background-menu-mouse-fixed;
+}
+
+
+.HymenuCom .childrenItemTitle{
+    height: 40px;
+    vertical-align: middle!important;
+    border-bottom: 2px solid@color-menu-divider;
+    padding: 0px 0px 0px 16px!important;
+    background: @background-unfold-menu;
+    cursor: default;
+    display: flex!important;
+    align-items: center;
+}
+
+.HymenuCom .childrenItemUserTitle{
+    height: 40px;
+    vertical-align: middle!important;
+    border-bottom: 2px solid@color-menu-divider;
+    padding: 2px 0px 0px 16px!important;
+    background: @background-unfold-menu;
+    cursor: pointer;
+}
+
+.HymenuCom .wsNo{
+    width: 104px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.HymenuCom .childrenItem:hover{
+   color: @background-interaction-normal;
+   background: @background-menu-mouse-fixed;
+ }
+
+ .HymenuCom .ui.centered.grid,{
+    font-size: 14px!important;
+    background: @background-unfold-menu;
+    margin: 0px;
+    color: @color-menu-font;
+    width: 120px;
+ }
+
+
+ .HymenuCom .ui.centered.grid div:first-child{
+    font-weight: bold!important;
+ }
+
+
+.HymenuCom .imageDiv{
+    background-repeat: no-repeat!important;
+    background-position:50% 50%!important;
+}
+
+.HymenuCom .ShowMenu{
+    position: absolute;
+    left: 52px;
+    top:-46px;
+    width: 500px;
+}
+
+.HymenuCom .headImage{
+    position: absolute;
+    left: 3px;
+    top: 21px;
+}
+
